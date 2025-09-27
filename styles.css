@@ -307,30 +307,23 @@ header p {
   }
 }
 
-.currency-flag {
-  font-size: 3rem;
+.currency-code {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c3e50;
   text-align: center;
   margin-bottom: 15px;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
-}
-
-.currency-info {
-  text-align: center;
-  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .currency-name {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #2c3e50;
-  margin-bottom: 5px;
-}
-
-.currency-code {
-  font-size: 0.9rem;
-  color: #7f8c8d;
+  font-size: 1rem;
   font-weight: 500;
-  letter-spacing: 1px;
+  color: #7f8c8d;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.3;
 }
 
 .currency-rate {
@@ -614,8 +607,13 @@ header p {
     padding: 20px;
   }
 
-  .currency-flag {
-    font-size: 2.5rem;
+  .currency-code {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  .currency-name {
+    font-size: 0.9rem;
   }
 
   .rate-value {
@@ -645,7 +643,12 @@ header p {
     padding: 15px;
   }
 
-  .currency-flag {
-    font-size: 2rem;
+  .currency-code {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .currency-name {
+    font-size: 0.8rem;
   }
 }

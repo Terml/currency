@@ -198,17 +198,17 @@ function formatCurrencyData($data, $baseCurrency = 'USD')
 
     if ($baseCurrency === 'RUB') {
         $mainCurrencies = [
-            'USD' => '🇺🇸 Доллар США',
-            'CNY' => '🇨🇳 Китайский юань',
-            'BTC' => '₿ Bitcoin',
-            'ETH' => 'Ξ Ethereum',
+            'USD' => 'Доллар США',
+            'CNY' => 'Китайский юань',
+            'BTC' => 'Bitcoin',
+            'ETH' => 'Ethereum',
         ];
     } else {
         $mainCurrencies = [
-            'RUB' => '🇷🇺 Российский рубль',
-            'CNY' => '🇨🇳 Китайский юань',
-            'BTC' => '₿ Bitcoin',
-            'ETH' => 'Ξ Ethereum',
+            'RUB' => 'Российский рубль',
+            'CNY' => 'Китайский юань',
+            'BTC' => 'Bitcoin',
+            'ETH' => 'Ethereum',
         ];
     }
 

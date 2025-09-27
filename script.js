@@ -70,25 +70,22 @@ function updateCurrencyDisplay() {
 
   let html = "";
 
-  currencyData.forEach((currency) => {
-    html += `
-            <div class="currency-card" data-currency="${currency.code}">
-                <div class="currency-flag">${currency.name.split(" ")[0]}</div>
-                <div class="currency-info">
-                    <div class="currency-name">${currency.name}</div>
-                    <div class="currency-code">${currency.code}</div>
-                </div>
-                <div class="currency-rate">
-                    <span class="rate-value" data-currency="${
-                      currency.code
-                    }">${getCurrencySymbol(currency.base)}${formatCurrencyRate(
-      currency.rate
-    )}</span>
-                    <span class="rate-base">за 1 ${currency.code}</span>
-                </div>
-            </div>
-        `;
-  });
+   currencyData.forEach((currency) => {
+     html += `
+             <div class="currency-card" data-currency="${currency.code}">
+                 <div class="currency-code">${currency.code}</div>
+                 <div class="currency-name">${currency.name}</div>
+                 <div class="currency-rate">
+                     <span class="rate-value" data-currency="${
+                       currency.code
+                     }">${getCurrencySymbol(currency.base)}${formatCurrencyRate(
+       currency.rate
+     )}</span>
+                     <span class="rate-base">за 1 ${currency.name}</span>
+                 </div>
+             </div>
+         `;
+   });
 
   currencyGrid.innerHTML = html;
 
